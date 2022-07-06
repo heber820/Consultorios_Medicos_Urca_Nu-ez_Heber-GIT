@@ -46,8 +46,8 @@ header{
  }
 
 body{
-  background-color:rgb(20, 20, 20);
-
+ background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,77,1) 54%, rgba(2,0,36,1) 100%);
 }
 .cuerpo{
   background-color: rgb(20, 20, 20);
@@ -261,7 +261,115 @@ font-size: 20px;
   width: 150px;
     
 }
+.animated-shadow{
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 5px 20px 20px #070000;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
 
+.animated-shadow { color: #ffffff; font: normal 30px Varela Round, sans-serif; height: 140px; left: 0; letter-spacing: 5px; text-align: center; text-transform: uppercase; width: 100%; animation: move linear 2000ms ininite; z-index: 2; -webkit-animation: move linear 2000ms infinite;
+}
+  
+@keyframes move {
+    0% {
+      text-shadow:
+        4px -4px 0 #da0641,
+        3px -3px 0 #da0641,
+        2px -2px 0 #da0641,
+        1px -1px 0 #da0641,
+        -4px 4px 0 #13f1fc,
+        -3px 3px 0 #13f1fc,
+        -2px 2px 0 #13f1fc,
+        -1px 1px 0 #13f1fc;
+
+    }
+
+    25% {
+      text-shadow:
+        -4px -4px 0 #13f1fc,
+        -3px -3px 0 #13f1fc,
+        -2px -2px 0 #13f1fc,
+        -1px -1px 0 #13f1fc,
+        4px 4px 0 #da0641,
+        3px 3px 0 #da0641,
+        2px 2px 0 #da0641,
+        1px 1px 0 #da0641;
+    }
+
+    50% {
+      text-shadow:
+        -4px 4px 0 #da0641,
+        -3px 3px 0 #da0641,
+        -2px 2px 0 #da0641,
+        -1px 1px 0 #da0641,
+        4px -4px 0 #13f1fc,
+        3px -3px 0 #13f1fc,
+        2px -2px 0 #13f1fc,
+        1px -1px 0 #13f1fc;
+    }
+    75% {
+      text-shadow:
+        4px 4px 0 #13f1fc,
+        3px 3px 0 #13f1fc,
+        2px 2px 0 #13f1fc,
+        1px 1px 0 #13f1fc,
+        -4px -4px 0 #da0641,
+        -3px -3px 0 #da0641,
+        -2px -2px 0 #da0641,
+        -1px -1px 0 #da0641;
+
+    }
+    100% {
+      text-shadow:
+        4px -4px 0 #da0641,
+        3px -3px 0 #da0641,
+        2px -2px 0 #da0641,
+        1px -1px 0 #da0641,
+        -4px 4px 0 #13f1fc,
+        -3px 3px 0 #13f1fc,
+        -2px 2px 0 #13f1fc,
+        -1px 1px 0 #13f1fc;
+    }
+  }
+  
+
+/* animaciones - transiciones -transformaciones */
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.imagenes{
+  transition: all 2s;
+  -webkit-filter:;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+
+.imagenes:hover{
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  box-shadow: 0px 0px 15px 15px #ec731e;
+  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  }
+
+  .especialidades, .titulo1{
+
+  }
 
 
 
